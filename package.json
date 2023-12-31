@@ -1,0 +1,23 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "y",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc --target es6 --outDir dist --module es6",
+    "start": "ts-node src/",
+    "dev": "nodemon -x ts-node -e ts src"
+  },
+  "author": "arcinxe",
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "jsnext:main": "./dist/index.js",
+  "module": "./dist/index.js"
+}
